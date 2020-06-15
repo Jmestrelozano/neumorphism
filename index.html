@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="estilos.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+
+<body>
+    <div class="center">
+        <div class="icono primero">
+            <li><a href="#"><span class="fab fa-facebook-f"></span></a> </li>
+            <li><a href="#"><span class="fab fa-twitter"></span></a></li>
+            <li><a href="#"><span class="fab fa-instagram"></span></a></li>
+            <li><a href="#"><span class="fab fa-linkedin-in"></span></a></li>
+            <li><a href="#"><span class="fab fa-github"></span></a></li>
+        </div>
+    </div>
+
+    <script>
+        let primero = document.querySelectorAll(".primero li")
+        console.log(primero)
+        for (let i = 0; i < primero.length; i++) {
+            let result = primero[i];
+            result.addEventListener("click", function() {
+                this.classList.toggle("shadow-1")
+                this.classList.toggle("fill-color")
+            })
+        }
+    </script>
+</body>
+
+</html>
